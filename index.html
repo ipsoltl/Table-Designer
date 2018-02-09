@@ -1,0 +1,34 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <title>Конструктор таблиц</title>
+</head>
+<body>
+    <p>Создаем таблицы вводя количество стобцов и количество строк.</p>
+
+    <p>
+        <label>Кол-во строк</label>
+        <input type="number" id="numberOfLines" value="5">
+        <label>Кол-во стобцов</label>
+        <input type="number" id="numberOfColumns" value="3">
+        <input type="button" id="buttonLinesColumns" value="Добавить" onclick="countNumberLines()">
+        <input type="button" value="Очистить" onclick="window.location.reload()">
+    </p>
+
+    <table id='table'></table>
+
+    <p id="startCode">
+        <label>&lt;table&gt;</label>
+        <label id="samCode"></label>
+        <label>&lt;/table&gt;</label>
+    </p>
+
+
+    <input type="button" value="Получить HTML" onclick="launchingCodeHTML()">
+
+    <script src="script.js"></script>
+</body>
+</html>
