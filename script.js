@@ -1,7 +1,8 @@
 function countNumberLines() {
     var lines = document.getElementById('numberOfLines').value;
     var columns = document.getElementById('numberOfColumns').value;
-
+    
+    document.getElementById('table').innerHTML = '';
     for (let index = 0; index < lines; index++) {
         var tr = document.createElement('tr');
         tr.id = 'tr'+ index;
@@ -25,11 +26,8 @@ function countNumberLines() {
         elements[index33].style.padding = "3px";
           
     };
-    
-};
-function launchingCodeHTML() {
     document.getElementById('startCode').style.display = 'block';
+    document.getElementById('samCode').innerHTML = '';
     var codeHtml = table.innerHTML;
     samCode.appendChild(document.createTextNode(codeHtml));
-
 };
