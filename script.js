@@ -13,9 +13,7 @@ function countNumberLines() {
             td.innerHTML=index2;
             td.id = 'td' + index2;
             document.getElementById('tr' + index).appendChild(td);
-      
         };
-        
     };
 
     var elements = document.querySelectorAll('td');
@@ -23,9 +21,9 @@ function countNumberLines() {
         proverca = index33 + 1;
         elements[index33].innerHTML = proverca;
         elements[index33].style.border = "ridge";
-        elements[index33].style.padding = "3px";
-          
+        elements[index33].style.padding = "3px";   
     };
+    
     document.getElementById('startCode').style.display = 'block';
     document.getElementById('samCode').innerHTML = '';
     var codeHtml = table.innerHTML;
