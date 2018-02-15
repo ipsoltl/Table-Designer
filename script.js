@@ -24,8 +24,9 @@ function countNumberLines() {
         elements[index33].style.padding = "3px";   
     };
     
-    document.getElementById('startCode').style.display = 'block';
+    document.getElementById('samCode').style.display = 'block';
     document.getElementById('samCode').innerHTML = '';
     var codeHtml = table.innerHTML;
-    samCode.appendChild(document.createTextNode(codeHtml));
+    samCode.innerHTML = '<table>' + codeHtml + '</table>';
+    
 };

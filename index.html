@@ -7,12 +7,12 @@
     <title>Конструктор таблиц</title>
 </head>
 <body>
-    <p>Создаем таблицы вводя количество стобцов и количество строк.</p>
+    <p>Создаем таблицы вводя количество столбцов и количество строк.</p>
 
     <p>
         <label>Кол-во строк</label>
         <input type="number" id="numberOfLines" value="5">
-        <label>Кол-во стобцов</label>
+        <label>Кол-во столбцов</label>
         <input type="number" id="numberOfColumns" value="3">
         <input type="button" id="buttonLinesColumns" value="Добавить" onclick="countNumberLines()">
         <input type="button" value="Очистить" onclick="window.location.reload()">
@@ -22,11 +22,7 @@
 
     <hr>
 
-    <p id="startCode">
-        <label>&lt;table&gt;</label>
-        <label id="samCode"></label>
-        <label>&lt;/table&gt;</label>
-    </p>
+    <textarea id="samCode" cols="100" rows="20"></textarea>
 
     <script src="script.js"></script>
 </body>
