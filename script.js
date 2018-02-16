@@ -1,6 +1,14 @@
+document.getElementById('numberOfLines').oninput = countNumberLines;
+document.getElementById('numberOfColumns').oninput = countNumberLines;
+
 function countNumberLines() {
     var lines = document.getElementById('numberOfLines').value;
+    var outLin = document.getElementById('outputOfLines');
+    outLin.innerHTML = lines;
+
     var columns = document.getElementById('numberOfColumns').value;
+    var outCol = document.getElementById('outputOfColumns');
+    outCol.innerHTML = columns;
     
     document.getElementById('table').innerHTML = '';
     for (let index = 0; index < lines; index++) {
@@ -24,9 +32,8 @@ function countNumberLines() {
         elements[index33].style.padding = "3px";   
     };
     
-    document.getElementById('samCode').style.display = 'block';
     document.getElementById('samCode').innerHTML = '';
     var codeHtml = table.innerHTML;
     samCode.innerHTML = '<table>' + codeHtml + '</table>';
-    
 };
+countNumberLines();
