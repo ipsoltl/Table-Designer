@@ -24,12 +24,22 @@ function countNumberLines() {
         };
     };
 
+    var borderSt = document.getElementById('borderStyle').value;
+    var borderWt = document.getElementById('borderWidth').value;
+    borderWt = +borderWt;
+    //console.log(typeof borderWt);
+    var borderCl = document.getElementById('borderColor').value;
+    
+
     var elements = document.querySelectorAll('td');
     for (let index33 = 0; index33 < elements.length; index33++) {
         proverca = index33 + 1;
         elements[index33].innerHTML = proverca;
-        elements[index33].style.border = "ridge";
-        elements[index33].style.padding = "3px";   
+        elements[index33].style.border = borderSt;
+        //elements[index33].style.border = borderWt;
+        //elements[index33].style.border = borderCl;        
+        elements[index33].style.padding = "3px";
+
     };
     
     document.getElementById('samCode').innerHTML = '';
